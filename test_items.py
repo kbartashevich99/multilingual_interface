@@ -10,6 +10,6 @@ class TestBasketButton():
     def test_find_basket_button(self, browser):
         browser.get(link)
         time.sleep(10)
-        button = browser.find_elements_by_css_selector('.btn-add ')
+        button = browser.find_elements_by_css_selector('.btn-add-to-basket ')
         assert len(button) > 0, 'Button is not found'
 
